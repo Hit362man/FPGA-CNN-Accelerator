@@ -2,7 +2,6 @@
 
 A 5×5 convolution datapath written in **Verilog** for the **DE1-SoC / Intel Cyclone V FPGA**. It accepts a 28×28 grayscale input via a serial capture module, processes it through eight convolution filters and a 10-class fully connected stage, then drives a seven-segment display with the classifier result.
 
-> **Status: syntax-patched development snapshot, not a verified final hardware build.** The available source files were recovered from an older project folder and contain source-level fixes. The new Arduino bridge and testbenches are reconstructed additions. No ModelSim/Quartus/hardware verification is claimed. See [fixes applied](docs/FIXES_APPLIED.md) and [remaining issues](docs/KNOWN_ISSUES.md).
 
 ## Architecture
 
