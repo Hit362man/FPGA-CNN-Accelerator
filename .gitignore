@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+digit_image.png
+
+# Quartus generated builds and project-local settings
+db/
+incremental_db/
+output_files/
+simulation/
+*.qws
+*.sof
+*.pof
+*.jic
+*.rpt
+*.smsg
+*.summary
+*.bak
+*.vcd
+*.wlf
+*.vstf
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Generated digit preview
+host/digit_image.png
+digit_image.png
+# Icarus / waveform / simulation artifacts
+*.vvp
+*.vcd
+*.fst
