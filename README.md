@@ -88,15 +88,3 @@ bash testbench/run_iverilog.sh
 ```
 
 The tests use small behavioral memories matching the intended synchronous-read contract. They do not instantiate Quartus `altsyncram`. The original Quartus FPGA project (`.qpf`, `.qsf`, timing/pin constraints) and any original ModelSim testbenches were not supplied, so there is no reproducible board bitstream in this repository.
-
-## Validation and project claims
-
-This snapshot includes specific source-level fixes for the display path, 0–9 decoder, last-pixel accumulation, class-9 comparison, SRAM/ROM read scheduling and multi-frame rearming. However, final model accuracy, timing closure, device utilization, and end-to-end FPGA classification have **not** been verified from the available files.
-
-For a completed portfolio demo: restore the original Quartus project and actual Arduino firmware if available, run vendor-memory simulations, validate known digit inputs against expected results, and add measured waveforms/hardware photos.
-
-If any of these files came from course-provided material, verify redistribution permission before publishing them publicly; generated Intel IP wrappers may carry vendor notices.
-
-## November 2026 syntax correction
-
-The earlier corrected ZIP accidentally omitted the `//` prefix on a separator comment immediately before `S_WAIT_TAP:` in `rtl/cnn_conv_5x5_core.v`. This made the file invalid Verilog and caused Icarus Verilog syntax/case-expression errors. The missing comment prefix has been restored. **The `testbench/run_iverilog.sh` suite still needs to be run on a machine with Icarus Verilog installed; it was not executed in this environment.**
