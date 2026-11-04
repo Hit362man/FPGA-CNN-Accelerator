@@ -1,4 +1,6 @@
 # FPGA CNN Accelerator for Handwritten Digit Recognition
+<img width="2048" height="740" alt="PHOTO-2025-12-29-11-59-40" src="https://github.com/user-attachments/assets/99a927fc-dbee-4e5d-94ac-2df26b6d881a" />
+
 
 A 5×5 convolution datapath written in **Verilog** for the **DE1-SoC / Intel Cyclone V FPGA**. It accepts a 28×28 grayscale input via a serial capture module, processes it through eight convolution filters and a 10-class fully connected stage, then drives a seven-segment display with the classifier result.
 
